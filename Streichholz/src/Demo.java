@@ -7,12 +7,15 @@
 //Tester
 public class Demo {
 
-	public static void main(String[] args) {
+	public static void main(String[] args){
 		Streich s = new Streich();
-		
-		System.out.println(s.checkEquation("3+2=2+3"));
-		
-
-	}
-
+		try {
+			System.out.println(s.getCorrectEquation("93-27-30+16=68"));
+		} catch (Exception e) {
+			System.out.println("Incorrect Input");
+		}
+		}
+	
 }
+
+
